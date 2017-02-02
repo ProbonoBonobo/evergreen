@@ -1,0 +1,8 @@
+cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', 
+cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', 
+cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', 
+cmd : 'echo git commit -m "Updated at Thu Feb  2 15:00:36 2017', success : 'False', exit_code : '2', stdout : 'Error!', error : '/bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file', 
+cmd : 'echo git push -u origin local', success : 'True', exit_code : '0', stdout : 'git push -u origin local', error : '', 
+cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '16', error : '', 
+cmd : 'echo 16 > state.txt', success : 'True', exit_code : '0', stdout : '16 > state.txt', error : '', 
