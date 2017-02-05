@@ -25,7 +25,6 @@ class timeout:
         signal.alarm(0)
 class Shell:
     def __init__(self):
-        self.github_access_token = "46f76f6db8e7876b7a17417c28fccbb67fe70090"
         self.home = "/Users/kz/Projects/Evergreen4/"
         self.count = 0
         self.has_sudo = False
@@ -121,7 +120,7 @@ class Shell:
                 self.exec_cmd("/usr/local/bin/ghi close " + issue_id)
         print("Open issues:")
         print(self.open_issues())
-        
+
 
     def reopen_issue(self, issue_id="random"):
         closed_issues = self.closed_issues()
