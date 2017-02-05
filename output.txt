@@ -1,9 +1,0 @@
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
-Dependency GIT path is /usr/bin/git
