@@ -1,7 +1,9 @@
-{, cmd : '/usr/local/bin/ghi list --filter='all'', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/local/bin/ghi list --global', success : 'True', exit_code : '0', stdout : '# Global, open issues that you can see
+  evergreen 2  My spoon is too big. [wontfix]', error : '', }, 
 {, cmd : '/usr/local/bin/ghi list', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
   2  My spoon is too big. [wontfix]', error : '', }, 
-{, cmd : '/usr/local/bin/ghi list --filter='all'', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/local/bin/ghi list --global', success : 'True', exit_code : '0', stdout : '# Global, open issues that you can see
+  evergreen 2  My spoon is too big. [wontfix]', error : '', }, 
 {, cmd : '/usr/local/bin/ghi list', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
   2  My spoon is too big. [wontfix]', error : '', }, 
 {, cmd : '/usr/local/bin/ghi close open', success : 'False', exit_code : '1', stdout : 'Error!', error : 'Issue required.
@@ -12,17 +14,18 @@ usage: ghi close [options] <issueno>
 
 Issue modification options
     -m, --message [<text>]           close with message', }, 
-{, cmd : '/usr/local/bin/ghi list --filter='all'', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/local/bin/ghi list --global', success : 'True', exit_code : '0', stdout : '# Global, open issues that you can see
+  evergreen 2  My spoon is too big. [wontfix]', error : '', }, 
 {, cmd : '/usr/local/bin/ghi list', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
   2  My spoon is too big. [wontfix]', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '52', error : '', }, 
-{, cmd : 'echo 52 > state.txt', success : 'True', exit_code : '0', stdout : '52 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '52', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '53', error : '', }, 
+{, cmd : 'echo 53 > state.txt', success : 'True', exit_code : '0', stdout : '53 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '53', error : '', }, 
 {, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '53', error : '', }, 
-{, cmd : 'echo 53 > state.txt', success : 'True', exit_code : '0', stdout : '53 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '54', error : '', }, 
+{, cmd : 'echo 54 > state.txt', success : 'True', exit_code : '0', stdout : '54 > state.txt', error : '', }, 
