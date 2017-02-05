@@ -1,22 +1,19 @@
-{, cmd : '/usr/local/bin/ghi list --closed', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen closed issues
-  11  spoon is too big.
-  10  spoon is too big.
-   9  spoon is too big.
-   8  spoon is too big.
-   7  spoon is too big."
-   6  My spoon is too big.
-   5  spoon is too big."
-   4  My spoon is too big.
-   3  My spoon is too big.
-   1  aegerggerg', error : '', }, 
+{, cmd : '/usr/local/bin/ghi open --message='Resolve hyper von neumann conjecture' --label='invalid'', success : 'True', exit_code : '0', stdout : '#18: hyper von neumann conjecture'
+@ProbonoBonobo opened this issue 1 second ago.  [open] 
+['invalid']
+
+    'Resolve
+
+
+Opened on ProbonoBonobo/evergreen.', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '55', error : '', }, 
-{, cmd : 'echo 55 > state.txt', success : 'True', exit_code : '0', stdout : '55 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '55', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '56', error : '', }, 
+{, cmd : 'echo 56 > state.txt', success : 'True', exit_code : '0', stdout : '56 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '56', error : '', }, 
 {, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '56', error : '', }, 
-{, cmd : 'echo 56 > state.txt', success : 'True', exit_code : '0', stdout : '56 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '57', error : '', }, 
+{, cmd : 'echo 57 > state.txt', success : 'True', exit_code : '0', stdout : '57 > state.txt', error : '', }, 
