@@ -1,55 +1,19 @@
-{, cmd : 'ghi list', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
-  11  spoon is too big.
-  10  spoon is too big.
-   9  spoon is too big.
-   8  spoon is too big.
-   7  spoon is too big."
-   6  My spoon is too big.
-   5  spoon is too big."
-   4  My spoon is too big.
-   3  My spoon is too big.
-   2  My spoon is too big.', error : '', }, 
-{, cmd : 'ghi list', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
-  11  spoon is too big.
-  10  spoon is too big.
-   9  spoon is too big.
-   8  spoon is too big.
-   7  spoon is too big."
-   6  My spoon is too big.
-   5  spoon is too big."
-   4  My spoon is too big.
-   3  My spoon is too big.
-   2  My spoon is too big.', error : '', }, 
-{, cmd : 'ghi close 9', success : 'True', exit_code : '0', stdout : '#9: spoon is too big.
-@ProbonoBonobo opened this issue 34 minutes ago.  [closed] 
-
-    My
-
-
-Updated.', error : '', }, 
-{, cmd : 'ghi list', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
-  11  spoon is too big.
-  10  spoon is too big.
-   8  spoon is too big.
-   7  spoon is too big."
-   6  My spoon is too big.
-   5  spoon is too big."
-   4  My spoon is too big.
-   3  My spoon is too big.
-   2  My spoon is too big.', error : '', }, 
-{, cmd : 'ghi close 1', success : 'True', exit_code : '0', stdout : '#1: aegerggerg
-@ProbonoBonobo opened this issue 50 minutes ago.  [closed] 
-
-
-Updated.', error : '', }, 
+{, cmd : 'ghi list --filter='all'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi list', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi list --filter='all'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi list', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi close open', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi list --filter='all'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi list', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'ghi close 1', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '47', error : '', }, 
-{, cmd : 'echo 47 > state.txt', success : 'True', exit_code : '0', stdout : '47 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '47', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '48', error : '', }, 
+{, cmd : 'echo 48 > state.txt', success : 'True', exit_code : '0', stdout : '48 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '48', error : '', }, 
 {, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '48', error : '', }, 
-{, cmd : 'echo 48 > state.txt', success : 'True', exit_code : '0', stdout : '48 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '49', error : '', }, 
+{, cmd : 'echo 49 > state.txt', success : 'True', exit_code : '0', stdout : '49 > state.txt', error : '', }, 
