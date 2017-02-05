@@ -27,8 +27,9 @@ and follow the prompt's instructions.
 
 ###initializing the launch daemon
 
-`Nobodys-MacBook-Pro:Evergreen4 kz$ python3 installer.py
-Daemon successfully loaded. Exiting with status code 0...`
+`Nobodys-MacBook-Pro:Evergreen4 kz$ python3 installer.py`
+
+`Daemon successfully loaded. Exiting with status code 0...`
 
 Restart to activate the daemon.
 
