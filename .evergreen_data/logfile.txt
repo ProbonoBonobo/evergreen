@@ -1,19 +1,26 @@
-{, cmd : '"$(/usr/local/bin/ghi open -m  'Remove path to nonabelian manifold
-(automatically generated)')"', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: line 1: #23: Remove path to nonabelian manifold
-@ProbonoBonobo opened this issue 0 seconds ago.  [open] 
-
-    (automatically generated)
-
-
-Opened on ProbonoBonobo/evergreen.: No such file or directory', }, 
+{, cmd : '"$(/usr/local/bin/ghi open -m  'Convert applicative continuation scheme into identity manifold
+(automatically generated)' -l )"', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: line 1: # ProbonoBonobo/evergreen open issues
+  23  Remove path to nonabelian manifold
+  22  subcategory of tensor sheaves" [invalid]
+  21  Convert subcategory of tensor sheaves [invalid]
+  20  referential point-free complexity into yoneda embedding" ["invalid"]
+  19  Reduce referential point-free complexity into yoneda embedding [invalid]
+  18  hyper von neumann conjecture' ['invalid']
+  17  Resolve hyper von neumann conjecture [invalid]
+  16  instance of sequence extensions' ['invalid']
+  15  Reduce instance of sequence extensions [invalid]
+  14  Export environment from non-abundant sheaves [invalid]
+  13  Export environment from non-abundant sheaves [invalid]
+  12  'Convert anabelian scheme into weil reducer'
+   2  My spoon is too big. [wontfix]: No such file or directory', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '65', error : '', }, 
-{, cmd : 'echo 65 > state.txt', success : 'True', exit_code : '0', stdout : '65 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '65', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '66', error : '', }, 
+{, cmd : 'echo 66 > state.txt', success : 'True', exit_code : '0', stdout : '66 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '66', error : '', }, 
 {, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '66', error : '', }, 
-{, cmd : 'echo 66 > state.txt', success : 'True', exit_code : '0', stdout : '66 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '67', error : '', }, 
+{, cmd : 'echo 67 > state.txt', success : 'True', exit_code : '0', stdout : '67 > state.txt', error : '', }, 
