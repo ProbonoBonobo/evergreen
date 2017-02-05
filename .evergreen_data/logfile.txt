@@ -1,4 +1,4 @@
-{, cmd : '/usr/local/bin/ghi open -m  "Reduce forgetful geometric monoid into kolmogorov calculi" -l 'invalid'', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
+{, cmd : '/usr/local/bin/ghi open -m  "Convert instance of kleisli functor" -l 'invalid'', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
   22  subcategory of tensor sheaves" [invalid]
   21  Convert subcategory of tensor sheaves [invalid]
   20  referential point-free complexity into yoneda embedding" ["invalid"]
@@ -14,11 +14,11 @@
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '62', error : '', }, 
-{, cmd : 'echo 62 > state.txt', success : 'True', exit_code : '0', stdout : '62 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '62', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '63', error : '', }, 
+{, cmd : 'echo 63 > state.txt', success : 'True', exit_code : '0', stdout : '63 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '63', error : '', }, 
 {, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '63', error : '', }, 
-{, cmd : 'echo 63 > state.txt', success : 'True', exit_code : '0', stdout : '63 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '64', error : '', }, 
+{, cmd : 'echo 64 > state.txt', success : 'True', exit_code : '0', stdout : '64 > state.txt', error : '', }, 
