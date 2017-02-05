@@ -27,7 +27,7 @@ class timeout:
 class Shell:
     def __init__(self):
         self.github_access_token = "46f76f6db8e7876b7a17417c28fccbb67fe70090"
-        self.home = "/Users/kz/Projects/Evergreen3/"
+        self.home = "/Users/kz/Projects/Evergreen4/"
         self.count = 0
         self.has_sudo = False
         self.download_q = []
@@ -38,7 +38,7 @@ class Shell:
                              'chmod'    : 'not available',
                              'mkdir'    : 'not available',
                              'rm'       : 'not available'}
-        self.on_quit = {'filepaths' : ['/Users/kz/Projects/Evergreen3/.evergreen_data']}
+        self.on_quit = {'filepaths' : ['/Users/kz/Projects/Evergreen4/.evergreen_data']}
         self.log = []
         self.boot()
 
@@ -48,11 +48,12 @@ class Shell:
     #     assert(response['success'])
     #     return 'ok'
     def boot(self):
-        for required_executable in self.dependencies.keys():
+        self.goto("/Users/kz/Projects/Evergreen4")
+        for required_executable in list(self.dependencies.keys()):
             executable_path = self.which(required_executable)
-            print("Dependency " + required_executable.upper() + " path is " + executable_path)
+            print("Dependency " + str(required_executable.upper()) + " path is " + str(executable_path))
             self.dependencies[required_executable] = executable_path
-
+        self.goto("/Users/kz/Projects/Evergreen4")
         self.echo("pwd")
         self.goto(".evergreen_data")
         self.echo("pwd")

@@ -10,8 +10,8 @@ from typing import Iterable
 import math
 import random
 
-parentDirectory = "/Users/kz/Projects/Evergreen3"
-sys.path.append("/Users/kz/Projects/Evergreen3")
+parentDirectory = "/Users/kz/Projects/Evergreen4"
+sys.path.append("/Users/kz/Projects/Evergreen4")
 from utils import exists, isDirectory, isFile, isUrl, response_code, shexec, touch, pwd, cat, shextract, shedcode,shencode, shedcode, cd, ls, pwd, mapreduce
 
 
