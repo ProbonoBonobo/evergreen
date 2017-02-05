@@ -4,15 +4,14 @@ import signal
 import subprocess
 import sys
 import re
-from typing import Callable, Iterable
-from crontab import CronTab
 from datetime import datetime, time, timedelta
-import sched
 import math
 import random
 import json
-import crontab
 import io
+from generate import make_issue
+
+
 class timeout:
     def __init__(self, seconds=1, error_message='Timeout'):
         self.seconds = seconds
@@ -31,7 +30,9 @@ class Shell:
         self.count = 0
         self.has_sudo = False
         self.download_q = []
-        self.dependencies = {'git'      : 'not available',
+        self.issues = {'open' : [], 'closed': []}
+        self.dependencies = {'ghi'      : 'not available',
+                             'git'      : 'not available',
                              'hub'      : 'not available',
                              'crontab'  : 'not available',
                              'launchctl': 'not available',
@@ -54,6 +55,11 @@ class Shell:
             print("Dependency " + str(required_executable.upper()) + " path is " + str(executable_path))
             self.dependencies[required_executable] = executable_path
         self.goto("/Users/kz/Projects/Evergreen4")
+        if self.issues['open']:
+            self.close_all_open_issues()
+        self.create_issue()
+
+
         self.echo("pwd")
         self.goto(".evergreen_data")
         self.echo("pwd")
@@ -74,10 +80,75 @@ class Shell:
     def commit(self):
         commit_number = self.count_commits()
         self.exec_cmd("git add .")
-        self.exec_cmd("git commit . -m --allow-empty-message")
+        self.exec_cmd("git commit . -m \"State update\"")
+
+    def issues_labeled(self,label="all"):
+        if label != "all":
+            context = self.exec_cmd("/usr/local/bin/ghi list --label=" + str(label))
+        else:
+            context = self.exec_cmd("/usr/local/bin/ghi list --global")
+        output = context['stdout']
+        patt = re.compile(r"(?:\s*)(\d+)(?:\W\s)")
+        matches = re.findall(patt,output)
+        return matches
+
+    def create_issue(self):
+        issue_title = make_issue()
+        context = self.exec_cmd("".join(["\"$(/usr/local/bin/ghi open -m  \'", issue_title, "\n(automatically generated)\' )\""]))
+        print(context['stdout'])
+
+    def open_issues(self):
+        context = self.exec_cmd("/usr/local/bin/ghi list")
+        output = context['stdout']
+        patt = re.compile(r"(?:\s*)(\d+)(?:\W\s)")
+        issue_numbers = re.findall(patt,output)
+        self.issues['open'] = issue_numbers
+        return self.issues['open']
+
+    def closed_issues(self):
+        context = self.exec_cmd("/usr/local/bin/ghi list --closed")
+        output = context['stdout']
+        patt = re.compile(r"(?:\s*)(\d+)(?:\W\s)")
+        closed_issues = re.findall(patt,output)
+        self.issues['closed'] = closed_issues
+        return self.issues
+
+    def close_all_open_issues(self):
+        open_issues = self.open_issues()
+        if open_issues:
+            for issue_id in open_issues:
+                print("Closing issue " + str(issue_id) + "...")
+                self.exec_cmd("/usr/local/bin/ghi close " + issue_id)
+        print("Open issues:")
+        print(self.open_issues())
+        
+
+    def reopen_issue(self, issue_id="random"):
+        closed_issues = self.closed_issues()
+        if issue_id == "random":
+            issue_id = random.choice(closed_issues)
+        if issue_id in closed_issues:
+            print("Reopening issue " + str(issue_id) + "...")
+            self.exec_cmd("/usr/local/bin/ghi reopen " + issue_id)
+            print("Open issues:")
+            print(self.open_issues())
+
+    def close_issue(self, issue_id="random"):
+        open_issues = self.open_issues()
+        if issue_id == "random":
+            issue_id = random.choice(open_issues)
+        if issue_id in open_issues:
+            print("Closing issue " + str(issue_id) + "...")
+            self.exec_cmd("/usr/local/bin/ghi close " + issue_id)
+            print("Open issues:")
+            print(self.open_issues())
+
+
+
 
     def push(self):
-        self.exec_cmd("git push")
+        self.exec_cmd("git push origin master")
+
 
     def get_remote_name(self):
         remote_name =  shextract("git rev-parse --abbrev-ref --symbolic-full-name @{u}")
@@ -322,23 +393,23 @@ def shexec(cmd, timeout_interval=3,error_message="I just crapped my pants", **kw
         return error_message
     return error_message
 
-class CronDaemon():
-    from crontab import CronTab
-    def __init__(self):
-        self.cron = CronTab(user=True)
-    def print(self):
-        for job in self.cron:
-            print(job)
-    def add(self,cmd="/usr/local/bin/python3 /Users/kz/Projects/Evergreen4/utils.py"):
-        job = self.cron.new(command=cmd, comment='evergreen')
-        job.setall("* * * * *")
-        job.enable()
-        assert(True==job.is_valid())
-        self.cron.write_to_user( user=True )
-        self.cron.write()
-    def cancel_all(self):
-        self.cron.remove_all(comment='evergreen')
-        self.cron.write_to_user( user=True )
+# class CronDaemon():
+#     from crontab import CronTab
+#     def __init__(self):
+#         self.cron = CronTab(user=True)
+#     def print(self):
+#         for job in self.cron:
+#             print(job)
+#     def add(self,cmd="/usr/local/bin/python3 /Users/kz/Projects/Evergreen4/utils.py"):
+#         job = self.cron.new(command=cmd, comment='evergreen')
+#         job.setall("* * * * *")
+#         job.enable()
+#         assert(True==job.is_valid())
+#         self.cron.write_to_user( user=True )
+#         self.cron.write()
+#     def cancel_all(self):
+#         self.cron.remove_all(comment='evergreen')
+#         self.cron.write_to_user( user=True )
 
 if __name__ == "__main__":
     sh = Shell()
