@@ -1,19 +1,24 @@
-{, cmd : '/usr/local/bin/ghi open --message="Convert subcategory of tensor sheaves" --label=invalid', success : 'True', exit_code : '0', stdout : '#22: subcategory of tensor sheaves"
-@ProbonoBonobo opened this issue 0 seconds ago.  [open] 
-[invalid]
-
-    "Convert
-
-
-Opened on ProbonoBonobo/evergreen.', error : '', }, 
+{, cmd : '/usr/local/bin/ghi open -m $(printf '%s' Transform stateless point-free bundle into derived calculi) -l $(printf '%s' 'invalid')', success : 'True', exit_code : '0', stdout : '# ProbonoBonobo/evergreen open issues
+  22  subcategory of tensor sheaves" [invalid]
+  21  Convert subcategory of tensor sheaves [invalid]
+  20  referential point-free complexity into yoneda embedding" ["invalid"]
+  19  Reduce referential point-free complexity into yoneda embedding [invalid]
+  18  hyper von neumann conjecture' ['invalid']
+  17  Resolve hyper von neumann conjecture [invalid]
+  16  instance of sequence extensions' ['invalid']
+  15  Reduce instance of sequence extensions [invalid]
+  14  Export environment from non-abundant sheaves [invalid]
+  13  Export environment from non-abundant sheaves [invalid]
+  12  'Convert anabelian scheme into weil reducer'
+   2  My spoon is too big. [wontfix]', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
 {, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '58', error : '', }, 
-{, cmd : 'echo 58 > state.txt', success : 'True', exit_code : '0', stdout : '58 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '58', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '59', error : '', }, 
+{, cmd : 'echo 59 > state.txt', success : 'True', exit_code : '0', stdout : '59 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '59', error : '', }, 
 {, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '59', error : '', }, 
-{, cmd : 'echo 59 > state.txt', success : 'True', exit_code : '0', stdout : '59 > state.txt', error : '', }, 
+{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '60', error : '', }, 
+{, cmd : 'echo 60 > state.txt', success : 'True', exit_code : '0', stdout : '60 > state.txt', error : '', }, 
