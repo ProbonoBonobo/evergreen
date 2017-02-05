@@ -3,10 +3,13 @@
 
 ##what's in the box
 * A launch daemon that initializes a Poisson counting process
-* A system subprocess that writes the repository's current commit count to [a tracked file](/.evergreen-data/state.txt)
+* A system subprocess that writes the repository's current commit count to [a tracked file](/.evergreen_data/state.txt)
 * A user agent that pushes the updated state to the Git repository about every 90 minutes
 * A abstract complaint syntax for generating new issues
 * A command-line interface to Github API
+
+##what's the deal with the 'issues' section
+yeah I guess simply updating [the commit counter](/.evergreen_data/state.txt) is insufficient to trigger a github "activity" event, so I made a generator function that yields [category-theoretic complaints](https://github.com/ProbonoBonobo/evergreen/issues?utf8=%E2%9C%93&q=is%3Aissue)  
 
 ##requirements
 Tested on Mac OSX/Sierra, theoretically should work with all POSIX-based operating systems. You'll need python3 and git command-line tools on your path.
