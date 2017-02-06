@@ -1,16 +1,11 @@
-{, cmd : 'ghi open -m  'Export variable from identity complexity
-(automatically generated)'', success : 'True', exit_code : '0', stdout : '#38: 'Export variable from identity complexity
-(automatically generated)'
-@ProbonoBonobo opened this issue 0 seconds ago.  [open] 
-
-
-Opened on ProbonoBonobo/evergreen.', error : '', }, 
-{, cmd : 'echo /usr/local/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/local/bin/git add .', error : '', }, 
-{, cmd : '/usr/local/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '84', error : '', }, 
-{, cmd : 'echo 84 > state.txt', success : 'True', exit_code : '0', stdout : '84 > state.txt', error : '', }, 
-{, cmd : '/usr/local/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '84', error : '', }, 
-{, cmd : '/usr/local/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : '/usr/local/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
-{, cmd : '/usr/local/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : '/usr/local/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '85', error : '', }, 
+{, cmd : 'ghi open -m  'Reduce universal comonad into anabelian extensions
+(automatically generated)'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
+{, cmd : 'echo /usr/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/bin/git add .', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '85', error : '', }, 
 {, cmd : 'echo 85 > state.txt', success : 'True', exit_code : '0', stdout : '85 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '85', error : '', }, 
+{, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '86', error : '', }, 
+{, cmd : 'echo 86 > state.txt', success : 'True', exit_code : '0', stdout : '86 > state.txt', error : '', }, 
