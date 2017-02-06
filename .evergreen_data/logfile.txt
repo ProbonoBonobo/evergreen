@@ -1,19 +1,17 @@
-{, cmd : '"$(/usr/local/bin/ghi open -m  'Convert von neumann reducer into geometric functor
-(automatically generated)' )"', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: line 1: #28: Convert von neumann reducer into geometric functor
+{, cmd : '"$(/usr/local/bin/ghi open -m  'Save status from geometric semigroup
+(automatically generated)' )"', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: line 1: #30: Save status from geometric semigroup
 @ProbonoBonobo opened this issue 0 seconds ago.  [open] 
 
     (automatically generated)
 
 
 Opened on ProbonoBonobo/evergreen.: No such file or directory', }, 
-{, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
-{, cmd : 'echo pwd', success : 'True', exit_code : '0', stdout : 'pwd', error : '', }, 
-{, cmd : 'echo git add .', success : 'True', exit_code : '0', stdout : 'git add .', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '71', error : '', }, 
-{, cmd : 'echo 71 > state.txt', success : 'True', exit_code : '0', stdout : '71 > state.txt', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '71', error : '', }, 
-{, cmd : 'git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
-{, cmd : 'git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : 'git rev-list --all --count', success : 'True', exit_code : '0', stdout : '72', error : '', }, 
-{, cmd : 'echo 72 > state.txt', success : 'True', exit_code : '0', stdout : '72 > state.txt', error : '', }, 
+{, cmd : 'echo /usr/local/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/local/bin/git add .', error : '', }, 
+{, cmd : '/usr/local/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '79', error : '', }, 
+{, cmd : 'echo 79 > state.txt', success : 'True', exit_code : '0', stdout : '79 > state.txt', error : '', }, 
+{, cmd : '/usr/local/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '79', error : '', }, 
+{, cmd : '/usr/local/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/local/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/local/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/local/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '80', error : '', }, 
+{, cmd : 'echo 80 > state.txt', success : 'True', exit_code : '0', stdout : '80 > state.txt', error : '', }, 
