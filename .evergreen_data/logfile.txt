@@ -1,11 +1,11 @@
-{, cmd : 'ghi open -m  'Export state of shell
+{, cmd : 'ghi open -m  'Remove temp universal apparatus
 (automatically generated)'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
 {, cmd : 'echo /usr/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/bin/git add .', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '86', error : '', }, 
-{, cmd : 'echo 86 > state.txt', success : 'True', exit_code : '0', stdout : '86 > state.txt', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '86', error : '', }, 
-{, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
-{, cmd : '/usr/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '87', error : '', }, 
 {, cmd : 'echo 87 > state.txt', success : 'True', exit_code : '0', stdout : '87 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '87', error : '', }, 
+{, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/bin/git push origin master', success : 'False', exit_code : '128', stdout : 'Error!', error : 'fatal: unable to access 'https://github.com/ProbonoBonobo/evergreen.git/': Operation timed out after 300094 milliseconds with 0 out of 0 bytes received', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '88', error : '', }, 
+{, cmd : 'echo 88 > state.txt', success : 'True', exit_code : '0', stdout : '88 > state.txt', error : '', }, 
