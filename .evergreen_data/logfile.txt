@@ -1,11 +1,11 @@
-{, cmd : 'ghi open -m  'Fix orphaned kleisli transducer
+{, cmd : 'ghi open -m  'Remove working link from cron
 (automatically generated)'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
 {, cmd : 'echo /usr/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/bin/git add .', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '93', error : '', }, 
-{, cmd : 'echo 93 > state.txt', success : 'True', exit_code : '0', stdout : '93 > state.txt', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '93', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '94', error : '', }, 
+{, cmd : 'echo 94 > state.txt', success : 'True', exit_code : '0', stdout : '94 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '94', error : '', }, 
 {, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : '/usr/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '94', error : '', }, 
-{, cmd : 'echo 94 > state.txt', success : 'True', exit_code : '0', stdout : '94 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '95', error : '', }, 
+{, cmd : 'echo 95 > state.txt', success : 'True', exit_code : '0', stdout : '95 > state.txt', error : '', }, 
