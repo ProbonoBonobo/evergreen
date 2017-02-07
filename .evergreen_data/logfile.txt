@@ -1,11 +1,11 @@
-{, cmd : 'ghi open -m  'Remove status from anabelian semigroup
+{, cmd : 'ghi open -m  'Add some io categories
 (automatically generated)'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
 {, cmd : 'echo /usr/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/bin/git add .', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '98', error : '', }, 
-{, cmd : 'echo 98 > state.txt', success : 'True', exit_code : '0', stdout : '98 > state.txt', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '98', error : '', }, 
-{, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
-{, cmd : '/usr/bin/git push origin master', success : 'False', exit_code : '128', stdout : 'Error!', error : 'fatal: unable to access 'https://github.com/ProbonoBonobo/evergreen.git/': Could not resolve host: github.com', }, 
 {, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '99', error : '', }, 
 {, cmd : 'echo 99 > state.txt', success : 'True', exit_code : '0', stdout : '99 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '99', error : '', }, 
+{, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
+{, cmd : '/usr/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '100', error : '', }, 
+{, cmd : 'echo 100 > state.txt', success : 'True', exit_code : '0', stdout : '100 > state.txt', error : '', }, 
