@@ -1,11 +1,11 @@
-{, cmd : 'ghi open -m  'Reduce unit of geometric morphism
+{, cmd : 'ghi open -m  'Remove orphaned coherent reducer
 (automatically generated)'', success : 'False', exit_code : '127', stdout : 'Error!', error : '/bin/sh: ghi: command not found', }, 
 {, cmd : 'echo /usr/bin/git add .', success : 'True', exit_code : '0', stdout : '/usr/bin/git add .', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '96', error : '', }, 
-{, cmd : 'echo 96 > state.txt', success : 'True', exit_code : '0', stdout : '96 > state.txt', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '96', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '97', error : '', }, 
+{, cmd : 'echo 97 > state.txt', success : 'True', exit_code : '0', stdout : '97 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '97', error : '', }, 
 {, cmd : '/usr/bin/git add .', success : 'True', exit_code : '0', stdout : '', error : '', }, 
 {, cmd : '/usr/bin/git commit . -m "State update"', success : 'True', exit_code : '0', stdout : 'Error', error : '', }, 
 {, cmd : '/usr/bin/git push origin master', success : 'True', exit_code : '0', stdout : '', error : '', }, 
-{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '97', error : '', }, 
-{, cmd : 'echo 97 > state.txt', success : 'True', exit_code : '0', stdout : '97 > state.txt', error : '', }, 
+{, cmd : '/usr/bin/git rev-list --all --count', success : 'True', exit_code : '0', stdout : '98', error : '', }, 
+{, cmd : 'echo 98 > state.txt', success : 'True', exit_code : '0', stdout : '98 > state.txt', error : '', }, 
